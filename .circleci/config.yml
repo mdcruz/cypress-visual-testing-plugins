@@ -1,0 +1,59 @@
+version: 2.1
+
+jobs:
+  install_dependencies:
+    docker:
+      - image: circleci/node:12
+    steps:
+      - checkout
+      - restore_cache:
+          key: npm-cache-{{ checksum "package.json" }}
+      - run:
+          name: Install project dependencies
+          command: npm ci
+      - save_cache:
+          key: npm-cache-{{ checksum "package.json" }}
+          paths:
+            - ~/.npm
+            - ~/.cache
+
+  run_functional_tests:
+    docker:
+      - image: cypress/browsers:node12.18.3-chrome87-ff82
+    steps:
+      - checkout
+      - restore_cache:
+          key: npm-cache-{{ checksum "package.json" }}
+      - run:
+          name: Running functional tests
+          command: npm run cy:run
+      - store_artifacts:
+          path: cypress/videos
+      - store_artifacts:
+          path: cypress/screenshots
+
+  run_visual_tests:
+    docker:
+      - image: cypress/browsers:node12.18.3-chrome87-ff82
+    steps:
+      - checkout
+      - restore_cache:
+          key: npm-cache-{{ checksum "package.json" }}
+      - run:
+          name: Running functional tests
+          command: npm run cy:percy:run
+      - store_artifacts:
+          path: cypress/videos
+      - store_artifacts:
+          path: cypress/screenshots
+
+workflows:
+  build_and_test:
+    jobs:
+      - install_dependencies
+      - run_functional_tests:
+          requires:
+            - install_dependencies
+      - run_visual_tests:
+          requires:
+            - install_dependencies
