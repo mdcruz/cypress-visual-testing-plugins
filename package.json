@@ -16,6 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "cy:run": "cypress run --spec cypress/image-search.spec.js",
     "cy:applitools:run": "cypress run --spec cypress/integration/applitools/*.spec.js",
     "cy:image:snapshot:run": "cypress run --spec cypress/integration/cypress-image-snapshot/*.spec.js",
     "cy:percy:run": "percy exec -- cypress run --spec cypress/integration/percy/*.spec.js"
