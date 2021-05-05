@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# ReactSplash App (Image Search using unsplash API and react-photo-gallery)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This is an example React app from Stephen Grider's [Modern React with Redux](https://www.udemy.com/course/react-redux/) udemy course.
 
-### `yarn start`
+The app uses the unsplash API to get photos based on a search term. The first time the image list component renders, it will display the recent photos uploaded in unsplash. The images will then be updated when you type in a search term and click enter.
+In order to get images from unsplash API, the `REACT_APP_UNSPLASH_API_KEY` must be exported either on the terminal or by creating a `.env` file on the root folder.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Running the app
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Run `npm start` and then visit `https://localhost:3000`
 
-### `yarn test`
+## Running the Cypress tests
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+On a separate tab, run `npx cypress open` or `npx cypress run`
 
-### `yarn build`
+## Visual Tests
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This repo shows an example on how to use different visual testing plugins with Cypress. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### [Applitools](http://applitools.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the tests where it's using Applitools, create a free account on Applitools and please export the `APPLITOOLS_API_KEY` first prior to running the tests.
 
-### `yarn eject`
+Then open the Cypress Test Runner and select the applitools folder or on the terminal, run `npm run cy:applitools:run`.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### [Cypress Image Snapshot](https://github.com/jaredpalmer/cypress-image-snapshot)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To run the tests where it's using Cypress Image Snapshot, open the Cypress Test Runner and select the cypress-image-snapshot folder or on the terminal, run `npm run cy:image:snapshot:run`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### [Percy](https://percy.io/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To run the tests where it's using Percy, open the Cypress Test Runner and select the percy folder. When using the Cypress Test Runner, you won't see the Percy snapshots happening as Percy works on CI environment only. To see actual snapshots being sent to Percy Dashboard, on the terminal, run `npm run cy:percy:run`.

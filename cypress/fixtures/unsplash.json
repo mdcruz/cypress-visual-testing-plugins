@@ -1,0 +1,114 @@
+{
+  "results": [
+    {
+      "id": "1",
+      "description": "This is a mock data",
+      "alt_description": "pancakes mock data",
+      "urls": {
+        "small": "https://images.unsplash.com/photo-1541288097308-7b8e3f58c4c6"
+      },
+      "width": 250,
+      "height": 250,
+      "liked_by_user": "false"
+    },
+    {
+      "id": "2",
+      "description": "This is a mock data",
+      "alt_description": "pancakes mock data",
+      "urls": {
+        "small": "https://images.unsplash.com/photo-1541288097308-7b8e3f58c4c6"
+      },
+      "width": 250,
+      "height": 250,
+      "liked_by_user": "false"
+    },
+    {
+      "id": "3",
+      "description": "This is a mock data",
+      "alt_description": "pancakes mock data",
+      "urls": {
+        "small": "https://images.unsplash.com/photo-1541288097308-7b8e3f58c4c6"
+      },
+      "width": 250,
+      "height": 250,
+      "liked_by_user": "false"
+    },
+    {
+      "id": "4",
+      "description": "This is a mock data",
+      "alt_description": "pancakes mock data",
+      "urls": {
+        "small": "https://images.unsplash.com/photo-1541288097308-7b8e3f58c4c6"
+      },
+      "width": 250,
+      "height": 250,
+      "liked_by_user": "false"
+    },
+    {
+      "id": "5",
+      "description": "This is a mock data",
+      "alt_description": "pancakes mock data",
+      "urls": {
+        "small": "https://images.unsplash.com/photo-1541288097308-7b8e3f58c4c6"
+      },
+      "width": 250,
+      "height": 250,
+      "liked_by_user": "false"
+    },
+    {
+      "id": "6",
+      "description": "This is a mock data",
+      "alt_description": "pancakes mock data",
+      "urls": {
+        "small": "https://images.unsplash.com/photo-1541288097308-7b8e3f58c4c6"
+      },
+      "width": 250,
+      "height": 250,
+      "liked_by_user": "false"
+    },
+    {
+      "id": "7",
+      "description": "This is a mock data",
+      "alt_description": "pancakes mock data",
+      "urls": {
+        "small": "https://images.unsplash.com/photo-1541288097308-7b8e3f58c4c6"
+      },
+      "width": 250,
+      "height": 250,
+      "liked_by_user": "false"
+    },
+    {
+      "id": "8",
+      "description": "This is a mock data",
+      "alt_description": "pancakes mock data",
+      "urls": {
+        "small": "https://images.unsplash.com/photo-1541288097308-7b8e3f58c4c6"
+      },
+      "width": 250,
+      "height": 250,
+      "liked_by_user": "false"
+    },
+    {
+      "id": "9",
+      "description": "This is a mock data",
+      "alt_description": "pancakes mock data",
+      "urls": {
+        "small": "https://images.unsplash.com/photo-1541288097308-7b8e3f58c4c6"
+      },
+      "width": 250,
+      "height": 250,
+      "liked_by_user": "false"
+    },
+    {
+      "id": "10",
+      "description": "This is a mock data",
+      "alt_description": "pancakes mock data",
+      "urls": {
+        "small": "https://images.unsplash.com/photo-1541288097308-7b8e3f58c4c6"
+      },
+      "width": 250,
+      "height": 250,
+      "liked_by_user": "false"
+    }
+  ]
+}
