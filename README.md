@@ -1,17 +1,29 @@
-# ReactSplash App (Image Search using unsplash API and react-photo-gallery)
+# Leveraging Cypress beyond Functional Testing
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Supporting materials for my session on OmniTestingConf 2021 where I will share how to leverage Cypress beyond functional testing and showing how we can use various plugins to cover visual testing.
 
+## Pre-requisites
+
+- [Node and NPM](https://nodejs.org/en/download/) [LTS version]
+- [Visual Studio Code](https://code.visualstudio.com/download) or any text editor of your choice
 ## Overview
 
 This is an example React app from Stephen Grider's [Modern React with Redux](https://www.udemy.com/course/react-redux/) udemy course.
 
-The app uses the unsplash API to get photos based on a search term. The first time the image list component renders, it will display the recent photos uploaded in unsplash. The images will then be updated when you type in a search term and click enter.
-In order to get images from unsplash API, the `REACT_APP_UNSPLASH_API_KEY` must be exported either on the terminal or by creating a `.env` file on the root folder.
+The app uses the unsplash API to get photos based on a search term. The first time the image list component renders, it will display the recent photos uploaded in unsplash. The images will then be updated when you type in a search term and click enter. In order to get images from unsplash API, sign up for a free unsplash developer account then the `REACT_APP_UNSPLASH_API_KEY` must be exported on your terminal.
 
+```bash
+export REACT_APP_UNSPLASH_API_KEY=your-token-here
+
+// windows
+set REACT_APP_UNSPLASH_API_KEY=your-token-here
+```
+## Getting Started
+
+To get started on the hands-on material, simply clone this repository, `cd` to the project root and then install the project dependencies by typing in `npm i` on your chosen terminal.
 ## Running the app
 
-Run `npm start` and then visit `https://localhost:3000`
+On your terminal, run `npm start` and then visit `https://localhost:3000`
 
 ## Running the Cypress tests
 
